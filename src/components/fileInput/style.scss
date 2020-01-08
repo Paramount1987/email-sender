@@ -1,0 +1,22 @@
+.file-input {
+  margin-bottom: 10px;
+
+  &__label {
+    display: inline-block;
+    margin-left: 5px;
+    color:  #0055FB;
+  }
+
+  &__files {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}
+
+input[name="file"] {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}

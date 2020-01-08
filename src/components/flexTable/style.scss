@@ -1,0 +1,50 @@
+.flex-table {
+  font-size: 16px;
+  line-height: 25px;
+  color: #000;
+
+  &-wrap {
+    padding: 30px;
+  }
+
+  &-row {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      padding: 10px 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:nth-child(1),
+      &:nth-child(3) {
+        width: 110px;
+        flex-shrink: 0;
+      }
+      &:nth-child(2) {
+        flex-grow: 1;
+      }
+
+      &:nth-child(3) {
+        text-align: right;
+      }
+    }
+  }
+
+  &-header {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(#000, .4);;
+    color: rgba(#000, .4);
+  }
+
+  &-body {
+
+  }
+
+  &__title {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
