@@ -1,0 +1,35 @@
+.file-item {
+  display: flex;
+  align-items: center;
+  width: 49%;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+
+  &__ico {
+    flex-shrink: 0;
+    margin-right: 15px;
+    opacity: .4;
+  }
+
+  &__name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__btn {
+    background: none;
+    border: none;
+    flex-shrink: 0;
+    margin-left: auto;
+    color: #FF6666;
+    font-size: 16px;
+    cursor: pointer;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+}
